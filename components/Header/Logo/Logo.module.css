@@ -1,0 +1,17 @@
+.logo {
+  margin:10px 0px;
+  display: flex;
+  align-items: center;
+}
+
+.logo strong {
+  font-size: 35px;
+}
+
+.logo strong .pick {
+  color: #1D246E;
+}
+
+.logo strong .bazaar {
+  color: #1877F2;
+}

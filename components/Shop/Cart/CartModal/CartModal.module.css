@@ -1,0 +1,143 @@
+.modal {
+  position: fixed;
+  width: 25%;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  background: #ffff;
+
+}
+
+.backdrop {
+  position: fixed;
+  width: 75%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+}
+
+.modal_content {
+  overflow-y: scroll;
+  height: 100vh;
+}
+
+.modal_content::-webkit-scrollbar-thumb {
+  background: gray;
+  border-radius: 10px;
+}
+
+.modal_content::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+
+.modal_content::-webkit-scrollbar {
+  width: 6px;
+} 
+
+.modal_content .modal_header {
+  padding: 15px 20px;
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+  position: sticky;
+  background:#ffff;
+  border-bottom: 1px solid black;
+  top: 0;
+}
+
+.modal_content .close {
+  cursor: pointer;
+  padding: 12px;
+  background: #F3F4F6;
+  color: black;
+
+  /* font-size: 40px; */
+  font-size: 18px;
+  border-radius: 999px;
+}
+
+.modal_content .close:hover {
+  color:#ffff;
+  background: #9CA3AF;
+}
+
+.checkout_btn {
+  display: flex;
+  flex-wrap: wrap;
+  width: 25%;
+  /* justify-content: center; */
+  position: fixed;
+  bottom: 0;
+  padding: 5px 20px;
+}
+
+.checkout_btn button {
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3px 10px 3px 20px;
+  border-radius: 500px;
+  border: none;
+  background: #1877F2;
+  font-size: 15px;
+  cursor: pointer;
+  color: #ffff;
+  font-family: 'Open Sans', sans-serif;
+  margin-bottom: 5px
+}
+
+.checkout_btn button:hover {
+  background: #1D8BF6;
+}
+
+@media (max-width:768px) { 
+  .checkout_btn button{
+    /* justify-content: center; */
+    padding: 0px 20px 0px 20px;
+    font-size: 15px !important;
+  }
+
+  .checkout_btn {
+    width: 100% !important;
+  }
+
+  .modal {
+    width: 100% !important;
+  }
+
+  .backdrop  {
+    width: 0% !important;
+  }
+}
+
+@media (max-width:1080px) { 
+  .modal {
+    width: 50%;
+  }
+  .backdrop  {
+    width: 0%;
+  }
+  .checkout_btn {
+    width: 50%;
+  }
+}
+
+@media (max-width:1280px) { 
+  .modal {
+    width: 40%;
+  }
+
+  .checkout_btn {
+    width: 40%;
+  }
+
+  .backdrop  {
+    width: 60%;
+  }
+
+} 

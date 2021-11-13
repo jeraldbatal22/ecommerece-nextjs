@@ -1,0 +1,124 @@
+.userProfileContainer {
+  font-family: 'Open Sans', sans-serif;
+  margin: auto;
+  width: 50%;
+  margin-top: 50px;
+}
+.userprofile_card {
+  padding: 50px;
+  background: #ffff;
+  border-radius: 15px;
+}
+
+.userprofile_card .user_top_body {
+  justify-content: space-around;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+.user_top_body img {
+  border-radius: 100%;
+}
+
+.user_top_body .upload_image {
+ text-align:center;
+ margin-top:15px ;
+ /* Style as you please, it will become the visible UI component. */
+}
+
+.user_top_body .upload_image label {
+  cursor: pointer;
+  font-weight: 600;
+  /* border: 2px solid; */
+}
+
+.upload_photo {
+  display: none;
+  opacity: 0;
+  position: absolute;
+  z-index: -1;
+}
+
+
+.user_top_body .form_group {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0px;
+font-family: 'Open Sans', sans-serif;
+
+}
+
+.user_top_body .form_group label {
+  font-size: 14px;
+}
+
+.user_top_body .form_group input {
+  padding: 10px 15px;
+  border: none;
+  border: 1px ;
+  padding: 10px;
+  box-shadow: 2px 2px 2px 2px #888888;
+}
+
+.user_top_body .form_button  {
+  display: flex;
+  justify-content: center;
+  /* justify-content: space-between; */
+}
+
+.userProfileContainer > h1 {
+  margin: 20px 0px;
+  text-align:center;
+  font-size: 3rem;
+}
+
+.user_top_body .form_button .back a{
+  text-decoration: none;
+  color: black;
+}
+
+.user_top_body .form_button button {
+  padding: 10px 15px;
+  cursor: pointer;
+  border: none;
+}
+
+.user_top_body .form_button .update {
+  font-size: 18px;
+  margin: 15px 0px;
+  width: 100%;
+  background: #4285F4;
+  color: #ffff;
+}
+.user_top_body .form_button .update:hover {
+  background: #1D60F6;
+
+}
+
+
+@media (max-width:540px) { 
+  .userProfileContainer {
+    width: 100%;
+  }
+  .userProfileContainer img {
+   display: none;
+  }
+
+  .userprofile_card {
+    margin-top: 50px;
+  }
+}
+
+@media (max-width:1080px) { 
+  .userProfileContainer {
+    width: 95%;
+  }
+  .userProfileContainer img {
+  margin-bottom: 50px;
+  }
+  .userprofile_card {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+}

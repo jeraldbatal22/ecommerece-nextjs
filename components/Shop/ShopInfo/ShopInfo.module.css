@@ -1,0 +1,87 @@
+.shopInfoContainer {
+  display: flex;
+  flex: 20%;
+  flex-direction: column;
+  background-color: #FFFFFF;
+  border-radius: 8px;
+  padding: 20px;
+  font-family: 'Open Sans', sans-serif;
+  line-height: 22.75px;
+  margin-top: 5px;
+}
+
+.shopInfoContainer img {
+  margin-top: 15px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  height: 160px;
+  width: 160px;
+}
+
+.shopInfoContainer p {
+  color:gray;
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.shopInfoContainer p a {
+  color:gray;
+}
+
+.shopInfoContainer h3 {
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+
+.shopInfoContainer button {
+  font-size: 14px;
+  background: none;
+  border: none;
+  font-weight: 700;
+  color: #1877F2;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+/* p {
+  width: 10%;
+} */
+
+.shopHeader {
+  text-align: center;
+}
+
+.shopDetails  {
+  margin: 30px 15px 15px 15px ;
+  line-height: 20px;
+}
+
+.shopDetails p {
+  font-weight:  400;
+  margin-top: 15px;
+}
+
+.shopDetails  label {
+  font-size:14px;
+  font-weight: 600;
+  color:rgb(31, 41, 55);
+}
+
+.shopDetails div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.shopInfoContainer hr {
+  color: #E5E7EB;
+}
+
+@media (max-width:1280px) { 
+  .shopInfoContainer {
+    display: none;
+  }
+}
+
+.MuiSvgIcon-root {
+  cursor: pointer;
+}
